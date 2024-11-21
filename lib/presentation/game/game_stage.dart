@@ -128,6 +128,7 @@ class _GameStageState extends State<GameStage>
         if (car1.checkCollision(other: car2)) {
           // We stop the oldest car. We cannot immediately remove it from
           // the list inside the loop
+          car1.speed *= 0.3;
           // we slow down the newer car (there was an accident after all)
           car2.speed *= 0.75;
         }
