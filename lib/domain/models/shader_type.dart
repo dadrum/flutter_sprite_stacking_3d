@@ -1,0 +1,4 @@
+enum ShaderType {
+  stack,
+  grass,
+}
